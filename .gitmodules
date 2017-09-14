@@ -1,0 +1,3 @@
+[submodule "themes/hugo-future-imperfect-dark"]
+	path = themes/hugo-future-imperfect-dark
+	url = https://gitlab.com/initmanfs/hugo-future-imperfect-dark.git
