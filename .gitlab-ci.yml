@@ -1,5 +1,6 @@
 image: registry.gitlab.com/pages/hugo:0.26
-
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
 test:
   script:
   - hugo
