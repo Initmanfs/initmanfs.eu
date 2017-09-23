@@ -1,4 +1,4 @@
-image: registry.gitlab.com/pages/hugo:0.26
+image: registry.gitlab.com/remyj38/hugo:latest
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 test:
