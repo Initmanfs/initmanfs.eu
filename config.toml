@@ -1,0 +1,236 @@
+baseurl = "https://initmanfs.eu"
+languageCode = "fr"
+DefaultContentLanguage = "fr"
+title = "Initmanfs"
+theme = "hugo-future-imperfect-dark"
+preserveTaxonomyNames = true
+paginate = 5
+disqusShortname = ""
+googleAnalytics = ""
+pluralizeListTitles = false
+
+[params]
+    # Sets the meta tag description, usually reserved for the main page
+    description          = "Blog de deux étudiants en informatique"
+    # This will appear on the top left of the navigation bar
+    navbarTitle          = "Initmanfs"
+    # set this to the section name if section is not post
+    viewMorePostLink     = "/"
+
+# Optional Params
+    # RSS icon that appear on the sidebar, next to the social media buttons
+    rssAppearAtTop       = true
+    rssAppearAtBottom    = true
+    # Social media buttons that appear on the sidebar
+    socialAppearAtTop    = true
+    socialAppearAtBottom = true
+    categoriesByCount    = true
+    includeReadingTime   = true
+    # The set of favicons used are based on the write-up from this link:
+    # https://github.com/audreyr/favicon-cheat-sheet
+    # Please see the favicon partial template for more information
+    loadFavicon          = false
+    faviconVersion       = ""
+
+    # Disable showing the social sharing links on blog posts
+    socialShareDisabled = false
+
+    # Load custom CSS or JavaScript files. The variable is an array so that you
+    # can load multiple files if necessary. You can also load the standard theme
+    # files by adding the value, "default".
+    # customCSS            = ["default", "/path/to/file"]
+    # customJS             = ["default", "/path/to/file"]
+
+    customCSS            = ["default"]
+    customJS             = ["default"]
+
+    # Enable git informations on posts and pages footer
+    enableGitInfo        = true
+    gitrepo              = "https://gitlab.com/initmanfs/initmanfs.gitlab.io"
+
+# Disqus will take priority over staticman due to its ease of use. Feel free to check out both and decide.
+[params.staticman]
+    staticman = false
+    username  = ""
+    repo      = ""
+    branch    = ""
+
+[params.piwik]
+    enabled = true
+    # URL to the root of the piwik installation.
+    # Can include paths after the TLD (e.g https://example.com/piwik/)
+    host = "https://analytics.remyj.fr/"
+    # ID number of this site. Defaults to 1 if not included
+    site_id = 10
+    # Include <noscript> tags to track users with javascript disabled
+    track_nojs = true
+
+
+# Enable or disable specifics share buttons
+[params.share]
+    twitter     = true
+    google      = true
+    facebook    = true
+    reddit      = true
+    linkedin    = true
+    stumbleupon = false
+    email       = true
+
+# This will also appear on the sidebar.
+# A width of less than 100px is recommended
+# This is optional
+[params.pic]
+    src       = "/img/main/logo.jpg"
+    # modify your picture in the shape of a circle or
+    # future imperfect's hexagonal shape
+    # valid values: circle, imperfect or empty
+    type = "imperfect"
+    width     = ""
+
+# Adjust the amount of recent posts on the sidebar.
+# This is optional. The default value 5 will be used
+[params.postAmount]
+    sidebar = 2
+
+# Languages configurations
+[languages]
+
+[languages.fr]
+    languageName = "Français"
+    weight       = 1
+    title        = "Initmanfs"
+    # Sets the meta tag description, usually reserved for the main page
+    description  = "Blog de deux étudiants en informatique"
+    # This will appear on the top left of the navigation bar
+    navbarTitle  = "Initmanfs"
+    Copyright    = "Tout le contenu de Initmanfs est publié sous licence GNU GPLv3. <a href='https://gitlab.com/initmanfs/initmanfs.gitlab.io/blob/master/LICENSE' alt='Licence' target='_blank'>Cliquez ici pour plus d'informations</a>"
+
+
+# parms.intro will appear on the sidebar
+# This is optional, but it's suggested to use
+#[languages.fr.intro]
+#    header    = "Initmanfs"
+#    paragraph = ""
+[languages.fr.about]
+    text     = "Blog de deux étudiants en informatique"
+    url      = "/a-propos/"
+
+[languages.en]
+    languageName = "English"
+    weight       = 2
+    title        = "Initmanfs"
+    # Sets the meta tag description, usually reserved for the main page
+    description  = "Blog of two IT studients"
+    # This will appear on the top left of the navigation bar
+    navbarTitle  = "Initmanfs"
+    Copyright    = "All the content of Initmanfs is under GNU GPLv3 license. <a href='https://gitlab.com/initmanfs/initmanfs.gitlab.io/blob/master/LICENSE' alt='License' target='_blank'>Click here for more information</a>"
+
+# parms.intro will appear on the sidebar
+# This is optional, but it's suggested to use
+#[languages.en.intro]
+#    header    = "Initmanfs"
+#   paragraph = ""
+[languages.en.about]
+    text     = "Blog of two IT studients"
+    url      = "/about/"
+
+
+
+# Set up your menu items in the navigation bar
+# You can use identifier to prepend a font awesome icon to your text
+[[languages.fr.menu.main]]
+    name = "Accueil"
+    url = "/"
+    identifier = "fa fa-home"
+    weight = 1
+
+[[languages.fr.menu.main]]
+    name = "À Propos"
+    url = "/a-propos/"
+    identifier = "fa fa-id-card-o"
+    weight = 2
+
+[[languages.fr.menu.main]]
+    name = "Articles"
+    url = "/post/"
+    identifier = "fa fa-newspaper-o"
+    weight = 3
+
+[[languages.fr.menu.main]]
+    name = "Catégories"
+    url = "/categories/"
+    identifier = "fa fa-sitemap"
+    weight = 4
+
+[[languages.fr.menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    identifier = "fa fa-envelope-o"
+    weight = 5
+
+[[languages.en.menu.main]]
+    name = "Home"
+    url = "/"
+    identifier = "fa fa-home"
+    weight = 1
+
+[[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    identifier = "fa fa-id-card-o"
+    weight = 2
+
+[[languages.en.menu.main]]
+    name = "Posts"
+    url = "/post/"
+    identifier = "fa fa-newspaper-o"
+    weight = 3
+
+[[languages.en.menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    identifier = "fa fa-sitemap"
+    weight = 5
+
+[[languages.en.menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    identifier = "fa fa-envelope-o"
+    weight = 6
+
+
+# Insert your username and the icon will apear on the page as long as
+# socialAppearAtTop or socialAppearAtBottom is set to true in the params area
+# The social media icons will appear on the sidebar
+[social]
+    github          = "initmanfs"
+    gitlab          = "initmanfs"
+    bitbucket       = ""
+    jsfiddle        = ""
+    codepen         = ""
+    foursquare      = ""
+    dribbble        = ""
+    deviantart      = ""
+    behance         = ""
+    flickr          = ""
+    instagram       = ""
+    youtube         = ""
+    vimeo           = ""
+    vine            = ""
+    medium          = ""
+    wordpress       = ""
+    tumblr          = ""
+    xing            = ""
+    linkedin        = ""
+    slideshare      = ""
+    stackoverflow   = ""
+    reddit          = ""
+    pinterest       = ""
+    googleplus      = ""
+    facebook        = "1478319405775481"
+    facebook_admin  = ""
+    twitter_domain  = ""
+    twitter         = ""
+    email           = "contact@initmanfs.eu"
+[taxonomies]
+  category = "categories"
