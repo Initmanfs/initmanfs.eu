@@ -1,13 +1,19 @@
 image: registry.gitlab.com/remyj38/hugo:latest
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
+stages:
+  - test
+  - deploy
+  
 test:
+  stage: test
   script:
   - hugo
   except:
   - master
 
 pages:
+  stage: deploy
   script:
   - hugo
   artifacts:
