@@ -25,6 +25,8 @@ Dans le répertoire des fichiers web (*/var/www/* par défaut), nous allons tél
 root@tuto:/var/www# wget https://github.com/afaqurk/linux-dash/archive/master.tar.gz
 ```
 
+<!--more-->
+
 Après avoir téléchargé l’archive, nous pouvons maintenant l’extraire :
 
 ```shell

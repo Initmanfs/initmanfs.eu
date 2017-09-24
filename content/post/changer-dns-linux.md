@@ -14,10 +14,14 @@ type = "post"
 
 Bonjour, Aujourd’hui on va apprendre a modifié ses DNS. Il y a beaucoup d’avantage a avoir des serveurs DNS performants et fiable. Évitez les censures de l’état, plus de rapidité ou encore par soucis de sécurité.
 
+<!--more-->
+
 Il faut donc éditer le fichier */etc/dhcp/dhclient.conf* pour y dé-commenter la ligne suivante :
+
 ```
 prepend domain-name-servers <mettre les IPs des DNS voulu>
 ```
+
 Vous pouvez en mettre jusqu’à 3 séparé par des virgules.
 
 Je vous conseil ceux de [OpenNIC][opennic], les IPs apparaitrons en milieu de page après quelques secondes. Quand vous changez vos DNS assurez-vous que vous utilisez des DNS qui sont sûr. Vérifiez leurs réputations et leurs politique de confidentialité.
@@ -27,11 +31,13 @@ Puis il faut redémarrer le Gestionnaire de réseaux afin que les changements so
 ```shell
 service network-manager restart
 ```
+
 Pour vérifier que tout c’est bien enregistrer vous pouvez afficher le contenu du *resolv.conf*
 
 ```shell
 cat /etc/resolv.conf
 ```
+
 Voila c’est tout pour ce tuto !
 
 [opennic]: https://www.opennicproject.org/ "Site d'OpenNIC"

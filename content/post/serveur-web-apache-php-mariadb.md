@@ -24,6 +24,8 @@ Un serveur web complet est composé de plusieurs softs :
 - [PHP5][php] qu’Apache utilisera pour traiter le code php
 - Un serveur HTTP qui servira a traiter les requêtes : [Apache2][apache2]
 
+<!--more-->
+
 Nous allons donc commencer à installer les paquets de ces 3 softs :
 ```
 root@tuto ~/ apt-get install apache2 php5 php5-gd php5-curl php5-mysql mariadb-server php5-mcrypt

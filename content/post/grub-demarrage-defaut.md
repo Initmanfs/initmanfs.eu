@@ -3,7 +3,7 @@ author = "arthur"
 categories = ["linux", "windows"]
 date = "2016-08-05"
 description = "Tutoriel montrant comment passer GRUB en démarrage par défaut à la place de Windows et comment lui ajouter une image de fond."
-featured = "grub.png"
+featured = "grub.jpg"
 featuredalt = "Image de Grub au démarrage"
 featuredpath = "/img/posts/grub-demarrage-defaut"
 linktitle = ""
@@ -13,6 +13,8 @@ type = "post"
 +++
 
 Faire apparaître son GRUB quand vous êtes en UEFI n’est pas très compliqué cependant il faut appuyer sur F9 (pour moi) et si on le fait pas assez vite Windows démarre et là c’est long. Quitte à voir quelque chose régulièrement autant qu’il soit joli, ça ne coûte pas plus cher. Ce tutoriel sera en deux parties. La première (purement pratique) : faire que le démarrage passe par le GRUB et la deuxième, plus succincte, sera sur comment le rendre joli.
+
+<!--more-->
 
 ## Forcer le démarrage sur le GRUB
 

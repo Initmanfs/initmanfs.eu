@@ -14,11 +14,13 @@ type = "post"
 
 Aujourd’hui on va partager sa connexion par Wifi. Imaginez que vous êtes chez un ami qui vous reçoit pour un jour ou deux dans son appartement étudiants. Dans les résidences étudiantes, il ne suffit pas d’avoir le mot de passe du wifi pour se connecter puisqu’un pc doit correspondre à un compte sur le portail captif. Cependant si un pc qui est connecté au portail via le compte de votre ami et que ce dit ami vous partage sa connexion via le wifi, alors le problème de connexion a internet est résolu.
 
+<!--more-->
+
 Ou sinon imaginons que votre ami a juste un câble Ethernet et pas de routeur sans fils à sa disposition.  
 
 Lancer un invité de commande ou une fenêtre PowerShell en tant qu’administrateur. Puis pour définir un réseau wifi, il faut utiliser cette commande:
 
-```powershe
+```dos
 netsh wlan set hostednetwork mode=allow ssid=LeNomDeVotreWifi key=VotreMotDePasse!
 ```
 Puis il faut lancer le réseaux Wifi que l’on a créé. Pour ceci utilisez cette commande :

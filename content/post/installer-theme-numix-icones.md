@@ -37,3 +37,5 @@ Une fois ceci effectué, vous n’avez plus qu’à aller dans votre gestionnair
 
 [image1]: /img/posts/installer-theme-numix-icones/tuto-numix-2.png
 [image2]: /img/posts/installer-theme-numix-icones/tuto-numix.png
+
+<!--more-->

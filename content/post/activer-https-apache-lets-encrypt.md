@@ -14,6 +14,8 @@ type = "post"
 
 Si vous souhaitez sécuriser les flux de données entre votre serveur web et les clients, afin de protéger des données pouvant être sensible (comme des identifiants de connexion et autres)  ou tout autre raison, vous allez devoir utiliser le protocole HTTPS.  Qu’est-ce que le HTTPS ? C’est tout simplement le protocole HTTP, avec une couche de chiffrement (SSL ou TLS) afin de le sécuriser, via un chiffrement asymétrique, l’échange de données entre le client et le serveur. Nous allons donc voir comment générer un certificat Let’s Encrypt et comment configurer Apache pour qu’il active correctement HTTPS.
 
+<!--more-->
+
 # 1. Petit point théorique
 
 Avant d’entrer dans la technique, nous allons clarifier un peu le fonctionnement du SSL/TLS. Pas d’inquiétudes, on ne va pas rentrer dans les détails (si vous voulez vous documenter, internet regorge de très bons articles à ce sujet). Nous allons simplement voir un point qui est important pour la suite : les certificats.

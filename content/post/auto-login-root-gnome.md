@@ -31,3 +31,5 @@ Si vous obtenez un chargement infini lors de la connexion, passez en mode consol
 
 [debian]: https://www.debian.org/index.fr.html "Site officiel de Debian"
 [gnome]: http://www.gnome.org/ "Site officiel de Gnome"
+
+<!--more-->

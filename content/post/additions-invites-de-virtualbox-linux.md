@@ -14,7 +14,10 @@ type = "post"
 
 Lorsque vous utilisez VirtualBox, beaucoup de fonctionnalités sur le système virtualisé dépendent de l’installation des additions invité de VirtualBox. Ainsi dans ce tutoriel on va apprendre à installer ces fameuses additions !
 
-Ce tutoriel commence donc une fois votre machine virtuel installé. Nous allons monter les disques dans un dossier que nous créerons à cette effet, copier ce qui nous intéresse et lancer le script.  
+Ce tutoriel commence donc une fois votre machine virtuel installé. Nous allons monter les disques dans un dossier que nous créerons à cette effet, copier ce qui nous intéresse et lancer le script.
+
+<!--more-->
+
 Créons donc le dossier :
 
 ```shell

@@ -16,6 +16,7 @@ type = "post"
 
 Un hôte virtuel ou virtual host (abrégé vhost) en anglais est un système permettant au serveur web (Apache dans notre cas, mais présent sur la majorité des serveurs webs) d’héberger plusieurs sites, avec leurs paramètres respectifs, sur un seul et même serveur. Sans ce système, nous serions obligé d’utiliser un serveur différent par site. Vous avouerez que ce n’est pas spécialement rentable d’avoir donc un serveur (qu’il soit physique ou virtuel) par site : devoir avoir un noyau de système qui tourne juste pour un petit site, c’est pas top.
 
+<!--more-->
 
 ## Fonctionnement d’un hôte virtuel
 

@@ -16,6 +16,8 @@ Nextcloud est une alternative opensource aux solutions de cloud présentées par
 
 Afin de commencer ce tutoriel, nous allons d’abord voir comment préparer son instance Owncloud afin de la migrer vers Nextcloud. Si vous ne possédez pas encore d’instance, passez directement à la partie *[3. Installation](#3-installation-de-nextcloud)*.
 
+<!--more-->
+
 Les présentations étant faites, nous pouvons donc nous préparer à installer le bébé.
 
 ## 1. Prérequis

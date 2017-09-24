@@ -11,6 +11,7 @@ title = "Montez le deuxième disque chez Nodilex"
 type = "post"
 
 +++
+
 Dans ce tutoriels nous allons monter le deuxième fourni avec la location d’un VPS chez l’hébergeur Nodilex.
 
 Pour commencer nous allons créé la partitions :
@@ -18,6 +19,8 @@ Pour commencer nous allons créé la partitions :
 
 Continuons par lister les partitions présente sur le vps:
 `fdisk -l`
+
+<!--more-->
 
 ![Définition du deuxième disque][image1]  
 *Définition du deuxième disque*
