@@ -15,7 +15,7 @@ pluralizeListTitles = false
     # This will appear on the top left of the navigation bar
     navbarTitle          = "Initmanfs"
     # set this to the section name if section is not post
-    viewMorePostLink     = "/"
+    viewMorePostLink     = "/posts"
 
 # Optional Params
     # RSS icon that appear on the sidebar, next to the social media buttons
