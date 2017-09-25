@@ -10,7 +10,10 @@ Source code of initmanfs.eu, hosted on Gitlab pages
 
 To work locally with this project, you'll have to follow the steps below:
 
-1. Fork, clone or download this project
+1. Fork, clone or download this project (in recursive mode)
+    ```
+    git clone --recursive git@gitlab.com:initmanfs/initmanfs.gitlab.io.git
+    ```
 2. [Install][] Hugo
 3. Preview your project: `hugo server`
 4. Add content
