@@ -1,4 +1,4 @@
-baseurl = "https://initmanfs.eu"
+baseurl = "https://initmanfs.gitlab.io"
 languageCode = "fr"
 DefaultContentLanguage = "fr"
 title = "Initmanfs"
@@ -80,7 +80,7 @@ pluralizeListTitles = false
 # A width of less than 100px is recommended
 # This is optional
 [params.pic]
-    src       = "/img/main/logo.jpg"
+    src       = "/img/logo1.png"
     # modify your picture in the shape of a circle or
     # future imperfect's hexagonal shape
     # valid values: circle, imperfect or empty
