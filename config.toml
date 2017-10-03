@@ -29,7 +29,7 @@ pluralizeListTitles = false
     # The set of favicons used are based on the write-up from this link:
     # https://github.com/audreyr/favicon-cheat-sheet
     # Please see the favicon partial template for more information
-    loadFavicon          = false
+    loadFavicon          = true
     faviconVersion       = ""
 
     # Disable showing the social sharing links on blog posts
@@ -80,12 +80,12 @@ pluralizeListTitles = false
 # A width of less than 100px is recommended
 # This is optional
 [params.pic]
-    src       = "/img/logo1.png"
+    src       = "/img/main/logo.svg"
     # modify your picture in the shape of a circle or
     # future imperfect's hexagonal shape
     # valid values: circle, imperfect or empty
-    type = "imperfect"
-    width     = ""
+    type = "circle"
+    width     = "100"
 
 # Adjust the amount of recent posts on the sidebar.
 # This is optional. The default value 5 will be used
