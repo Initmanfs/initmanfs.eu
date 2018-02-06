@@ -96,9 +96,14 @@ For more information: http://nerderati.com/2011/03/17/simplify-your-life-with-an
 Download and install virt-manager, it is in the repository.
 
 Start Virt-Manager and go File > Add Connection
+
 ![tuto-kvm-arch][image1]
 
 Then fill in with what you put in ~/.ssh/config
+
 ![tuto-kvm-arch][image2]
 
 And then you can create Virtual machine on your server, just download ISOs to "/var/lib/libvirt/".
+
+[image1]: /img/posts/install-kvm/image1.png "Virtual Machine Manager interface"
+[image2]: /img/posts/install-kvm/image2.png "Add Connection to Virtual Machine Manager"
