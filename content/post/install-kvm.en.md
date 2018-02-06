@@ -17,6 +17,8 @@ So KVM is a very efficient type 1 hypervisor, it is free and it comes with all t
 Arch is a very lightweight distro and very customizeable, people tend to prefer "stabler distro" such as debian or centos but in fact Arch 
 is pretty stable and has the latest cutting edges technology, and no big update only rolling update no release updates.
 
+<!--more-->
+
 ## Check Hardware compatibility
 
 Ssh into your server so you verify that the CPU of your server can run Virtual Machines.
