@@ -11,7 +11,7 @@ pluralizeListTitles = false
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
-    description          = "Blog de deux étudiants en informatique"
+    description          = "Blog de deux ingenieurs DevOps"
     # This will appear on the top left of the navigation bar
     navbarTitle          = "Initmanfs"
     # set this to the section name if section is not post
@@ -120,7 +120,7 @@ pluralizeListTitles = false
     weight       = 2
     title        = "Initmanfs"
     # Sets the meta tag description, usually reserved for the main page
-    description  = "Blog of two IT studients"
+    description  = "Blog of two DevOps Engineer"
     # This will appear on the top left of the navigation bar
     navbarTitle  = "Initmanfs"
     Copyright    = "All the content of Initmanfs is under GNU GPLv3 license. <a href='https://gitlab.com/initmanfs/initmanfs.gitlab.io/blob/master/LICENSE' alt='License' target='_blank'>Click here for more information</a>"
@@ -131,7 +131,7 @@ pluralizeListTitles = false
 #    header    = "Initmanfs"
 #   paragraph = ""
 [languages.en.about]
-    text     = "Blog of two IT studients"
+    text     = "Blog of two DevOps Engineer"
     url      = "/about/"
 
 
@@ -145,12 +145,6 @@ pluralizeListTitles = false
     weight = 1
 
 [[languages.fr.menu.main]]
-    name = "À Propos"
-    url = "/a-propos/"
-    identifier = "fa fa-id-card-o"
-    weight = 2
-
-[[languages.fr.menu.main]]
     name = "Articles"
     url = "/post/"
     identifier = "fa fa-newspaper-o"
@@ -162,23 +156,11 @@ pluralizeListTitles = false
     identifier = "fa fa-sitemap"
     weight = 4
 
-[[languages.fr.menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    identifier = "fa fa-envelope-o"
-    weight = 5
-
 [[languages.en.menu.main]]
     name = "Home"
     url = "/"
     identifier = "fa fa-home"
     weight = 1
-
-[[languages.en.menu.main]]
-    name = "About"
-    url = "/about/"
-    identifier = "fa fa-id-card-o"
-    weight = 2
 
 [[languages.en.menu.main]]
     name = "Posts"
@@ -192,11 +174,7 @@ pluralizeListTitles = false
     identifier = "fa fa-sitemap"
     weight = 5
 
-[[languages.en.menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    identifier = "fa fa-envelope-o"
-    weight = 6
+
 
 
 # Insert your username and the icon will apear on the page as long as
