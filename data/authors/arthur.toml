@@ -1,7 +1,7 @@
 given_name      = "Arthur"
 family_name     = "Zinck"
 display_name    = "Arthur Zinck"
-image           = "https://www.arthurzinck.eu/images/avatar.jpg"
+image           = "https://www.arthurzinck.eu/images/avatar.png"
 short_bio       = "Passionné de technologies et d'automatisation"
 bio             = "Ingénieur DevOps, voulant tout automatiser et tout auto-héberger"
 link            = "https://www.arthurzinck.eu/"
