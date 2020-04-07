@@ -1,6 +1,6 @@
 +++
 author = "arthur"
-categories = ["linux"]
+categories = ["linux", "kubernetes", "docker"]
 date = "2020-04-07"
 description = "Tutoriel montrant comment installer Kubernetes sur des VPS Ovh"
 featured = "image1.png"
