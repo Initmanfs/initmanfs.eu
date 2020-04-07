@@ -15,10 +15,10 @@ type = "post"
 # Install Kubernetes
 
 
-Bonjour aujourd'hui nous allons installer kubernetes. Ici nous le ferons avec Kubespray sur OVH.
+Bonjour, aujourd'hui nous allons installer **Kubernetes**. Ici nous le ferons avec Kubespray sur OVH.
 Pour ce tutoriel j'ai trois **VPS SSD** premier prix avec **Ubuntu18.04**.
 Il y a beaucoup de prerequis avant d'installer **Kubernetes**, comme s'assurrer que les VPS peuvent
-communiquer et que ils sont dans le meme reseau privé, qu'ils ont un container runtime de fonctionnelle(rkt ou docker).
+communiquer et qu'ils sont dans le même réseau privé, qu'ils ont un container runtime fonctionnel (rkt ou docker).
 
 
 ## Sommaire
@@ -37,20 +37,19 @@ Pour installer Openvpn en un clin d'oeil j'utilise le script de [Nyr](https://gi
 wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 ```
 
-je commente dans le `/etc/openvpn/server/server.conf` la ligne `push "redirect-gateway def1 bypass-dhcp"`
-j'ajoute la ligne `client-to-client` a la fin
-puis je restart le service `systemctl restart openvpn`
+Je commente dans le `/etc/openvpn/server/server.conf` la ligne `push "redirect-gateway def1 bypass-dhcp"`
+j'ajoute la ligne `client-to-client` à la fin
+puis je redémarre le service `systemctl restart openvpn`
 
 
-
-je genere deux config client puisque un sera le serveur vpn et les deux autres les noeuds.
-Niveau IP ca se passe comme ca :
+Je génère deux configs client puisque un sera le serveur vpn et les deux autres les noeuds.
+Niveau IP ça se passe comme ça :
 * Node1 &rarr; 10.8.0.1
 * Node2 &rarr; 10.8.0.2
 * Node3 &rarr; 10.8.0.3
 
 
-je **SCP** mes config sur les serveur et je les renomme. Afin que mes noeuds se connecte automatiquement j'installe et configure le client openvpn puis j'edite decommente la ligne `AUTOSTART="all"` dans le fichier `/etc/default/openvpn`  et je reboot afin de tester que tout fonctionne pour le mieux.
+Je **scp** mes configs sur les serveurs et je les renomme. Afin que mes noeuds se connectent automatiquement,j'installe et configure le client openvpn puis j'édite décommente la ligne `AUTOSTART="all"` dans le fichier `/etc/default/openvpn`  et je reboot afin de tester que tout fonctionne pour le mieux.
 
 ```
 mv node[2/3].ovpn /etc/openvpn/client.conf
@@ -59,9 +58,9 @@ vim /etc/default/openvpn
 systemctl enable --now openvpn@client
 systemctl reboot
 ```
-# 2. Install de docker
+# 2. Installe de docker
 
-Basiquement j'install docker sur chacun de mes noeuds: 
+Basiquement j'installe docker sur chacun de mes noeuds: 
 
 ```
 apt-get update
@@ -88,7 +87,7 @@ docker run hello-world
 
 # 3. Config de kubespray
 
-je scp ma clefs github sur le server, je clone le repo, je change de branche sur celle de mon choix. Puis je configure l'installation et j'installe les derniers packets necessaire. La configuration de kubespray se fait en suivant betement le readme.
+Je **scp** ma clef github sur le serveur, je clone le repo, je change de branche sur celle de mon choix. Puis je configure l'installation et j'installe les derniers packets necessaires. La configuration de kubespray se fait en suivant bêtement le readme.
 ```
 pip3 install ansible==2.7.16
 git clone git@github.com:kubernetes-sigs/kubespray.git
@@ -101,12 +100,12 @@ declare -a IPS=(10.8.0.1 10.8.0.2 10.8.0.3 10.8.0.4)
 CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
 ansible-playbook -i inventory/mycluster/hosts.yaml  --become --become-user=root cluster.yml
 ```
-Il y a des flags Ansible qui peuvent etre utile : `--flush-cache` ou encore `--ask-become-pass`
+Il y a des flags Ansible qui peuvent être utiles : `--flush-cache` ou encore `--ask-become-pass`
 
 
 # 4. Test de l'instance
 
-donc on peut s'amuser a lancer quelques deployment
+On peut s'amuser à lancer quelques `deployment`
 ```
 kubectl create deployment test --image=gcr.io/hello-minikube-zero-install/hello-node
 kubectl expose deployment test --type=LoadBalancer --port=8080
