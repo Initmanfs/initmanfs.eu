@@ -45,9 +45,9 @@ puis je restart le service `systemctl restart openvpn`
 
 je genere deux config client puisque un sera le serveur vpn et les deux autres les noeuds.
 Niveau IP ca se passe comme ca :
-* Node1 $rrar; 10.8.0.1
-* Node2 $rrar; 10.8.0.2
-* Node3 $rrar; 10.8.0.3
+* Node1 &rarr; 10.8.0.1
+* Node2 &rarr; 10.8.0.2
+* Node3 &rarr; 10.8.0.3
 
 
 je **SCP** mes config sur les serveur et je les renomme. Afin que mes noeuds se connecte automatiquement j'installe et configure le client openvpn puis j'edite decommente la ligne `AUTOSTART="all"` dans le fichier `/etc/default/openvpn`  et je reboot afin de tester que tout fonctionne pour le mieux.
