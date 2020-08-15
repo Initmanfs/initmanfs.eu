@@ -89,8 +89,8 @@ key /etc/openvpn/easy-rsa/keys/VPN.key
 dh /etc/openvpn/easy-rsa/keys/dh1024.pem
 # Liste des certificats révoqués
 crl-verify /etc/openvpn/easy-rsa/keys/crl.pem
-# Clé TLS d'authentification
-tls-auth /etc/openvpn/easy-rsa/keys/ta.key 0
+# Clé TLS de chiffrement et d'authentification de la connexion
+tls-crypt /etc/openvpn/easy-rsa/keys/ta.key
 
 #Plage d'ip et masque réseau
 server 10.8.0.0 255.255.255.0
@@ -233,7 +233,7 @@ verb 1
 ca ca.crt
 cert nom_du_client.crt
 key nom_du_client.key
-tls-auth ta.key 1
+tls-crypt ta.key
 ```
 
 Dans cette configuration, il vous faut modifier l’ip du serveur (`ip_serveur`), et le nom du client pour le cert et le key.
