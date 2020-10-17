@@ -7,7 +7,7 @@ featured = "image1.png"
 featuredalt = "Bannière de l'article"
 featuredpath = "/img/posts/install-kubernetes-on-vps"
 linktitle = ""
-title = "Installer Kubernetes"
+title = "Installer Kubernetes sur Debian"
 type = "post"
 
 +++
